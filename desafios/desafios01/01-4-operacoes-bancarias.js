@@ -17,6 +17,7 @@ function createTransaction(transaction) {
 function getHigherTransactionByType(type) {
     let higherTransaction 
     let higherValue = 0
+    
     for (let transaction of user.transactions) {
         if (transaction.type == type && transaction.value > higherValue) {
             higherValue = transaction.value
